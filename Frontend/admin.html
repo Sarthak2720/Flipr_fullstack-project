@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+  <section id="manage-projects">
+    <h2>Manage Projects</h2>
+    <form id="add-project-form">
+      <input type="text" id="project-name" placeholder="Project Name" required>
+      <textarea id="project-description" placeholder="Project Description" required></textarea>
+      <input type="file" id="project-image" accept="image/*" required>
+      <button type="submit">Add Project</button>
+    </form>
+    <div id="projects-list"></div>
+  </section>
+  <section id="manage-clients">
+    <h2>Manage Clients</h2>
+    <form id="add-client-form">
+      <input type="text" id="client-name" placeholder="Client Name" required>
+      <input type="text" id="client-designation" placeholder="Designation" required>
+      <textarea id="client-description" placeholder="Description" required></textarea>
+      <input type="file" id="client-image" accept="image/*" required>
+      <button type="submit">Add Client</button>
+    </form>
+    <div id="clients-list"></div>
+  </section>
+  <section id="view-submissions">
+    <h2>Contact Form Submissions</h2>
+    <div id="contact-submissions"></div>
+  </section>
+  <section id="view-newsletter">
+    <h2>Newsletter Subscribers</h2>
+    <div id="newsletter-list"></div>
+  </section>
+  <script src="admin.js"></script>
+</body>
+</html>
